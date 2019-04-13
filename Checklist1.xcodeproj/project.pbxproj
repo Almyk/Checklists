@@ -12,6 +12,7 @@
 		FD1ABB392261E89F008576F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1ABB372261E89F008576F2 /* Main.storyboard */; };
 		FD1ABB3B2261E8A1008576F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1ABB3A2261E8A1008576F2 /* Assets.xcassets */; };
 		FD1ABB3E2261E8A1008576F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1ABB3C2261E8A1008576F2 /* LaunchScreen.storyboard */; };
+		FD1ABB4622624A28008576F2 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1ABB4522624A28008576F2 /* ChecklistItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FD1ABB3A2261E8A1008576F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD1ABB3D2261E8A1008576F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD1ABB3F2261E8A1008576F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD1ABB4522624A28008576F2 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				FD1ABB332261E89F008576F2 /* AppDelegate.swift */,
 				FD1ABB352261E89F008576F2 /* ChecklistViewController.swift */,
+				FD1ABB4522624A28008576F2 /* ChecklistItem.swift */,
 				FD1ABB372261E89F008576F2 /* Main.storyboard */,
 				FD1ABB3A2261E8A1008576F2 /* Assets.xcassets */,
 				FD1ABB3C2261E8A1008576F2 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD1ABB362261E89F008576F2 /* ChecklistViewController.swift in Sources */,
+				FD1ABB4622624A28008576F2 /* ChecklistItem.swift in Sources */,
 				FD1ABB342261E89F008576F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
