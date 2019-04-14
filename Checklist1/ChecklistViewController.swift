@@ -11,29 +11,13 @@ import UIKit
 class ChecklistViewController: UITableViewController, ItemDetailViewControllerDelegate {
 
     var items = [ChecklistItem]()
+    var checklist: Checklist!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let item0 = ChecklistItem()
-//        item0.text = "Walk the dog"
-//        items.append(item0)
-//
-//        let item1 = ChecklistItem()
-//        item1.text = "Brush my teeth"
-//        items.append(item1)
-//
-//        let item2 = ChecklistItem()
-//        item2.text = "Learn iOS development"
-//        items.append(item2)
-//
-//        let item3 = ChecklistItem()
-//        item3.text = "Soccer practice"
-//        items.append(item3)
-//
-//        let item4 = ChecklistItem()
-//        item4.text = "Eat ice cream"
-//        items.append(item4)
+        title = checklist.name
+        
         loadChecklistItems()
     }
 
