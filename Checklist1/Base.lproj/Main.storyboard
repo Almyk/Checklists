@@ -158,7 +158,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="Qpp-35-oMx" kind="show" identifier="ShowChecklist" id="agW-Cd-VGc"/>
-                        <segue destination="dTj-57-E8t" kind="show" id="7k3-SW-25T"/>
+                        <segue destination="dTj-57-E8t" kind="show" identifier="EditChecklist" id="7k3-SW-25T"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iO-OK-LOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -251,7 +251,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SJ9-yB-8Eu"/>
+        <segue reference="7k3-SW-25T"/>
         <segue reference="gfr-16-V8D"/>
     </inferredMetricsTieBreakers>
 </document>
