@@ -97,6 +97,18 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         }
         navigationController?.popViewController(animated: true)
     }
+    
+    override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        let controller = storyboard!
+                        .instantiateViewController(withIdentifier: "ListDetailViewController")
+                        as! ListDetailViewController
+        controller.delegate = self
+        
+        let checklist = lists[indexPath.row]
+        controller.checklistToEdit = checklist
+        
+        navigationController?.pushViewController(controller, animated: true)
+    }
 
     /*
     // Override to support conditional editing of the table view.
