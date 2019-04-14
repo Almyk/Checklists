@@ -13,6 +13,7 @@
 		FD1ABB3B2261E8A1008576F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1ABB3A2261E8A1008576F2 /* Assets.xcassets */; };
 		FD1ABB3E2261E8A1008576F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1ABB3C2261E8A1008576F2 /* LaunchScreen.storyboard */; };
 		FD1ABB4622624A28008576F2 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1ABB4522624A28008576F2 /* ChecklistItem.swift */; };
+		FD5A8D442263A1420043175E /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A8D432263A1420043175E /* AllListsViewController.swift */; };
 		FDC3ECAA2263168400DF4186 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3ECA92263168400DF4186 /* ItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		FD1ABB3D2261E8A1008576F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD1ABB3F2261E8A1008576F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD1ABB4522624A28008576F2 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		FD5A8D432263A1420043175E /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 		FDC3ECA92263168400DF4186 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				FD1ABB3C2261E8A1008576F2 /* LaunchScreen.storyboard */,
 				FD1ABB3F2261E8A1008576F2 /* Info.plist */,
 				FDC3ECA92263168400DF4186 /* ItemDetailViewController.swift */,
+				FD5A8D432263A1420043175E /* AllListsViewController.swift */,
 			);
 			path = Checklist1;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				FDC3ECAA2263168400DF4186 /* ItemDetailViewController.swift in Sources */,
 				FD1ABB362261E89F008576F2 /* ChecklistViewController.swift in Sources */,
 				FD1ABB4622624A28008576F2 /* ChecklistItem.swift in Sources */,
+				FD5A8D442263A1420043175E /* AllListsViewController.swift in Sources */,
 				FD1ABB342261E89F008576F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
