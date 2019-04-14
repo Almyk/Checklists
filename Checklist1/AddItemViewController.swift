@@ -41,6 +41,11 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
         print("Contents of the text field: \(textField.text!)")
         navigationController?.popViewController(animated: true)
     }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        doneBarButton.isEnabled = false
+        return true
+    }
 
     // MARK: - Table view data source
     
