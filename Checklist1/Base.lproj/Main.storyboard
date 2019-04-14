@@ -49,7 +49,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="bSE-sv-sCs" kind="show" trigger="accessoryAction" id="gfr-16-V8D"/>
+                                    <segue destination="bSE-sv-sCs" kind="show" identifier="EditItem" trigger="accessoryAction" id="gfr-16-V8D"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
