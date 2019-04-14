@@ -44,7 +44,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="uyL-PX-xp7">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sOV-LN-HG4">
                             <connections>
-                                <segue destination="bSE-sv-sCs" kind="presentation" id="ZTJ-76-Yke"/>
+                                <segue destination="bSE-sv-sCs" kind="show" id="ZTJ-76-Yke"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -57,30 +57,57 @@
         <scene sceneID="swP-1X-HzY">
             <objects>
                 <tableViewController id="bSE-sv-sCs" customClass="AddItemViewController" customModule="Checklist1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fXB-wx-2HI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fXB-wx-2HI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="F20-WM-h8m">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F20-WM-h8m" id="X0g-3W-fdJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <sections>
+                            <tableViewSection id="1vW-Qb-Yyu">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="F20-WM-h8m">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F20-WM-h8m" id="X0g-3W-fdJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="5dX-tz-GhP">
+                                        <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5dX-tz-GhP" id="WFK-G6-Be6">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Fz1-1w-oqU">
+                                        <rect key="frame" x="0.0" y="88" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fz1-1w-oqU" id="y3x-OP-z6q">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="bSE-sv-sCs" id="8t7-2B-zxt"/>
                             <outlet property="delegate" destination="bSE-sv-sCs" id="Q5o-ca-kgT"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Item" id="Y8i-jg-3PG">
-                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="SDN-4d-aWl"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="FsM-UJ-lzh"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="SDN-4d-aWl">
+                            <connections>
+                                <action selector="cancel" destination="bSE-sv-sCs" id="sHk-0T-jfY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="FsM-UJ-lzh">
+                            <connections>
+                                <action selector="done" destination="bSE-sv-sCs" id="iae-71-aFq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nSr-1q-hNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
