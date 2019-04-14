@@ -44,7 +44,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="uyL-PX-xp7">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sOV-LN-HG4">
                             <connections>
-                                <segue destination="bSE-sv-sCs" kind="show" id="ZTJ-76-Yke"/>
+                                <segue destination="bSE-sv-sCs" kind="presentation" id="ZTJ-76-Yke"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -53,12 +53,12 @@
             </objects>
             <point key="canvasLocation" x="992" y="112"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Add Item-->
         <scene sceneID="swP-1X-HzY">
             <objects>
                 <tableViewController id="bSE-sv-sCs" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fXB-wx-2HI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -76,6 +76,11 @@
                             <outlet property="delegate" destination="bSE-sv-sCs" id="Q5o-ca-kgT"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Add Item" id="Y8i-jg-3PG">
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="SDN-4d-aWl"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="FsM-UJ-lzh"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nSr-1q-hNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
