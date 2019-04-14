@@ -8,9 +8,9 @@
 
 import UIKit
 
-protocol AddItemViewControllerDelegate: class {
-    func addItemViewControllerDidCancel(_ controller: ItemDetailViewController)
-    func addItemViewController(_ controller: ItemDetailViewController,
+protocol ItemDetailViewControllerDelegate: class {
+    func ItemDetailViewControllerDidCancel(_ controller: ItemDetailViewController)
+    func ItemDetailViewController(_ controller: ItemDetailViewController,
                                didFinishAdding item: ChecklistItem)
     func editItemViewController(_ controller: ItemDetailViewController,
                                didFinishEditing item: ChecklistItem)
@@ -23,7 +23,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     
     var itemToEdit: ChecklistItem?
     
-    weak var delegate: AddItemViewControllerDelegate?
+    weak var delegate: ItemDetailViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +52,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     @IBAction func cancel() {
 //        print("Contents of the text field: \(textField.text!)")
 //        navigationController?.popViewController(animated: true)
-        delegate?.addItemViewControllerDidCancel(self)
+        delegate?.ItemDetailViewControllerDidCancel(self)
     }
     
     @IBAction func done() {
@@ -64,7 +64,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
         } else {
             let item = ChecklistItem()
             item.text = textField.text!
-            delegate?.addItemViewController(self, didFinishAdding: item)
+            delegate?.ItemDetailViewController(self, didFinishAdding: item)
         }
     }
     
