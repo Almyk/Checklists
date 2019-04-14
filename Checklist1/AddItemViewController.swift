@@ -30,6 +30,12 @@ class AddItemViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        // disable row selection
+        return nil
+    }
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
 //        // #warning Incomplete implementation, return the number of sections
