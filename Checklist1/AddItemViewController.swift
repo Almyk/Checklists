@@ -22,6 +22,11 @@ class AddItemViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        textField.becomeFirstResponder()
+    }
+    
     // MARK: - Actions
     @IBAction func cancel() {
         print("Contents of the text field: \(textField.text!)")
