@@ -10,7 +10,7 @@ import UIKit
 
 class AllListsViewController: UITableViewController, ListDetailViewControllerDelegate {
 
-    var dataModel = DataModel()
+    var dataModel: DataModel!
     let cellIdentifier = "ChecklistCell"
 //    var lists = [Checklist]()
     
