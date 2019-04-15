@@ -17,6 +17,7 @@
 		FD2741432263A8B600EE47F3 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2741422263A8B600EE47F3 /* ListDetailViewController.swift */; };
 		FD5A8D442263A1420043175E /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A8D432263A1420043175E /* AllListsViewController.swift */; };
 		FDC3ECAA2263168400DF4186 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3ECA92263168400DF4186 /* ItemDetailViewController.swift */; };
+		FDE09B5722640052000A0FAB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE09B5622640052000A0FAB /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FD2741422263A8B600EE47F3 /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 		FD5A8D432263A1420043175E /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 		FDC3ECA92263168400DF4186 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		FDE09B5622640052000A0FAB /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				FD5A8D432263A1420043175E /* AllListsViewController.swift */,
 				FD27413E2263A5E500EE47F3 /* Checklist.swift */,
 				FD2741422263A8B600EE47F3 /* ListDetailViewController.swift */,
+				FDE09B5622640052000A0FAB /* DataModel.swift */,
 			);
 			path = Checklist1;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				FD1ABB362261E89F008576F2 /* ChecklistViewController.swift in Sources */,
 				FD27413F2263A5E500EE47F3 /* Checklist.swift in Sources */,
 				FD1ABB4622624A28008576F2 /* ChecklistItem.swift in Sources */,
+				FDE09B5722640052000A0FAB /* DataModel.swift in Sources */,
 				FD5A8D442263A1420043175E /* AllListsViewController.swift in Sources */,
 				FD1ABB342261E89F008576F2 /* AppDelegate.swift in Sources */,
 			);
